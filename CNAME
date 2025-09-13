@@ -1,1 +1,2 @@
 kalwrd.cl
+$ dig kalwrd.cl +noall +answer -t A
