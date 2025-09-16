@@ -8,13 +8,19 @@
         Inventario
       {% endblock %}
     </title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body class="bg-gray-100 text-gray-800">
-    <nav class="bg-blue-600 p-4 text-white">
-      <a href="{% url 'lista_productos' %}" class="font-bold">Inventario</a>
+    <nav class="bg-gradient-to-r from-blue-600 to-blue-700 px-6 py-4 text-white shadow-md">
+      <div class="container mx-auto flex items-center">
+        <svg class="w-7 h-7 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path>
+        </svg>
+        <a href="{% url 'lista_productos' %}" class="text-xl font-bold hover:text-blue-100 transition-colors duration-200">Sistema de Inventario</a>
+      </div>
     </nav>
+    
     <div class="container mx-auto p-4">
       {% block content %}
 
